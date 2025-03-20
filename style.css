@@ -1,0 +1,678 @@
+:root {
+    --primaryBackground : #344C36;
+    --shadow : 0 2px 2px rgba(0,0,0,0.5);
+}
+
+/* CSS Code */
+body {
+    overflow-x:hidden ;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color:  #344C36;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: #344C36;
+    box-sizing: border-box;
+}
+
+nav .navbar-logo h1 {
+    padding-left: 20px;
+    padding-top: 1px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-style: italic;
+}
+
+nav .navbar-logo span {
+    color: #FFC107;
+    font-weight: 700;
+}
+
+nav .navbar-menu {
+    display: flex;
+    gap: 30px;
+    padding-top: 3px;
+}
+
+nav .navbar-menu a {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+nav .navbar-menu a:hover {
+    color:#FFF4C2 ;
+}
+
+nav .navbar-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 2px;
+    background-color: #FFC107;
+    /*Warnakuning*/transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -ms-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+}
+
+nav .navbar-menu a:hover::after {
+    width: 100%;
+}
+
+nav .navbar-menu .contact-menu-secondary {
+    display: none;
+}
+
+nav .contact-menu-primary {
+    padding: 0 10px;
+}
+
+nav .contact-menu-primary button {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: 'Jost' ;
+    padding: 3px;
+    width: 110px;
+    background-color: #FFC107;
+    border-radius: 20px;
+    border: 2px solid #344C36;
+    transition: all 0.5s;
+}
+
+nav .contact-menu-primary button:hover {
+    background-color: rgb(245, 190, 27);
+    cursor: pointer;
+    transform: scale(105%);
+    -webkit-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -ms-transform: scale(105%);
+    -o-transform: scale(105%);
+}
+
+nav .hamburger {
+    display: none;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Hero Section Start */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url('assets/img/blob-scene-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+}
+
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 180px;
+    box-sizing: border-box;
+    max-width: 43%;
+}
+
+.hero .hero-description h1 {
+    font-family: 'DM Sans';
+    color: #4A4A4A;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.hero .hero-description #about-me {
+    max-width: 90%;
+    line-height: 52px;
+}
+
+.hero .hero-description h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.7rem;
+    color: black;
+    max-width: 91%;
+    
+}
+
+.hero .hero-description span {
+    position: relative;
+    font-style: oblique;
+    color: #FFC107;
+}
+
+.hero .hero-description span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    min-width: 99%; /* Panjang garis */
+    height: 2px; /* Ketebalan garis */
+    background-color: #FFC107; /* Warna garis */
+    margin-top: -5px; /* Jarak dari teks */
+}
+
+.hero .hero-description #my-experienced {
+    width: 55%;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.hero .hero-description p {
+    margin-top: 40px;
+    font-family: 'Poppins';
+    color: #4A4A4A;
+}
+
+.hero .hero-description button {
+    cursor: pointer;
+    background-color: var(--primaryBackground);
+    border: 2px solid #344C36;
+    color: white;
+    font-family: 'Jost';
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 13px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.hero .hero-description button:hover {
+    background-color: #ffcc00;
+    transform: scale(110%);
+    -webkit-transform: scale(110%);
+    -moz-transform: scale(110%);
+    -ms-transform: scale(110%);
+    -o-transform: scale(110%);
+}
+
+.hero .hero-image {
+    padding-right: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+
+.hero .hero-image img {
+    width: 450px;
+    height: 770px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+}
+
+/* Hero Section End */
+
+
+.provide {
+    background-color: var(--primaryBackground);
+    width: 100%;
+    height: 500px;
+}
+
+
+/* Ukuran Laptop */
+@media screen and (max-width : 1366px) {
+    /* Navbar Section Start */
+    nav {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    nav .navbar-logo h1 {
+        padding-left: 20px;
+        padding-top: 1px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: white;
+        font-style: italic;
+    }
+
+    nav .navbar-logo span {
+        color: #FFC107;
+        font-weight: 700;
+    }
+    
+    nav .navbar-menu {
+        display: flex;
+        gap: 30px;
+    }
+    
+    nav .navbar-menu a {
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: white;
+        letter-spacing: 1.4px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+    }
+
+    nav .navbar-menu a:hover {
+        color:#FFF4C2 ;
+    }
+    
+    nav .navbar-menu a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 0%;
+        height: 2px;
+        background-color: #FFC107;
+        /*Warnakuning*/transition: width 0.3s ease-in-out;
+        -webkit-transition: width 0.3s ease-in-out;
+        -moz-transition: width 0.3s ease-in-out;
+        -ms-transition: width 0.3s ease-in-out;
+        -o-transition: width 0.3s ease-in-out;
+    }
+
+    nav .navbar-menu a:hover::after {
+        width: 100%;
+    }
+
+    nav .navbar-menu .contact-menu-secondary {
+        display: none;
+    }
+    
+    nav .contact-menu-primary {
+        padding: 0 10px;
+    }
+
+    nav .hamburger {
+        display: none;
+    }
+
+    .container {
+        padding-top: 30px;
+    }
+
+    /* Hero Section Start */
+    .hero .hero-description {
+        max-width: 60%;
+        padding-left: 130px;;
+    }
+    
+    .hero .hero-description h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero .hero-description #about-me {
+        display: block;
+        line-height: 45px;
+    }
+    
+    .hero .hero-description h2 {
+        font-size: 1.7rem;
+        max-width: 50%;
+    }
+    
+    .hero .hero-description span {
+        position: relative;
+    }
+    
+    .hero .hero-description p {
+        font-size: 0.8rem;
+    }
+    
+    .hero .hero-description button:hover {
+        transform: scale(105%);
+    }
+    
+    .hero .hero-image {
+        padding-right: 130px;
+    }
+    
+    .hero .hero-image img {
+        width: 360px;
+        height: 630px;
+    }
+    
+    /* Hero Section End */
+}
+
+/* Ukuran Tablet */
+@media screen and (max-width: 1024px) {
+    nav .navbar-menu {
+        position: absolute;
+        flex-direction: column;
+        width: 20rem;
+        height: 100vh;
+        top: 9.7%;
+        right: -100%;
+        background-color: var(--primaryBackground);
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+
+    nav .navbar-menu a {
+        padding: 0 2rem;
+        margin: 20px 0;
+    }
+
+    nav .navbar-menu a::after {
+        content: "";
+        position: absolute;
+        left: 10%;
+        bottom: -7px;
+        width: 0%;
+        height: 2px;
+        background-color: #FFC107;
+        /*Warnakuning*/transition: width 0.3s ease-in-out;
+        -webkit-transition: width 0.3s ease-in-out;
+        -moz-transition: width 0.3s ease-in-out;
+        -ms-transition: width 0.3s ease-in-out;
+        -o-transition: width 0.3s ease-in-out;
+    }
+    
+    nav .navbar-menu a:hover::after {
+        width: 50%;
+    }
+    
+    nav .navbar-menu .contact-menu-secondary a::after {
+        content: "";
+        position: absolute;
+        left: 19%;
+        bottom: -7px;
+        width: 0%;
+        height: 2px;
+        background-color: #FFC107;
+        /*Warnakuning*/transition: width 0.3s ease-in-out;
+        -webkit-transition: width 0.3s ease-in-out;
+        -moz-transition: width 0.3s ease-in-out;
+        -ms-transition: width 0.3s ease-in-out;
+    
+    }
+
+    nav .navbar-menu .contact-menu-secondary a:hover::after {
+        width: 100%;
+    }
+
+    nav .navbar-menu .contact-menu-secondary {
+        display: block;
+        margin: 20px 0;
+    }
+
+
+    nav .navbar-menu button {
+        color: #006400;
+        font-weight: 600;
+        font-size: 0.9rem;
+        font-family: 'Jost' ;
+        padding: 5px;
+        width: 110px;
+        background-color: white;
+        border-radius: 15px;
+        border: 2px solid #344C36;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+
+    nav .navbar-menu button:hover {
+        background-color: #FFF4C2;
+        cursor: pointer;
+        transform: scale(105%);
+        -webkit-transform: scale(105%);
+        -moz-transform: scale(105%);
+        -ms-transform: scale(105%);
+        -o-transform: scale(105%);
+    }
+
+    nav .hamburger {
+        padding: 25px;
+        display: block;
+        cursor: pointer;
+    }
+
+    nav .hamburger img {
+        height: 25px;
+    }
+
+    nav .navbar-menu.active {
+        right: 0;
+    }
+
+    nav .contact-menu-primary {
+        display: none;
+    }
+
+    .hero {
+        background-image: url('assets/img/blob-scene-haikei2.svg');
+        background-size: cover;
+    }
+
+    .hero .hero-description h1 {
+        font-size: 1rem;
+    }
+
+    .hero .hero-description #about-me {
+        line-height: 35px;
+    }
+
+    .hero .hero-description h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero .hero-image {
+        padding-right: 70px;
+    }
+
+    .hero .hero-image img {
+        width: 320px;
+        height: 570px;
+    }
+
+    .hero .hero-description button {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Ukuran Handphone Besar */
+@media screen and (max-width: 768px) {
+
+    nav .navbar-menu {
+        position: absolute;
+        flex-direction: column;
+        width: 20rem;
+        height: 100vh;
+        padding: 3rem 0;
+        top: 9.7%;
+        right: -100%;
+        background-color: var(--primaryBackground);
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+
+    nav .navbar-menu a {
+        padding: 0 2rem;
+        margin: 20px 0;
+    }
+
+    nav .navbar-menu a::after {
+        content: "";
+        position: absolute;
+        left: 10%;
+        bottom: -7px;
+        width: 0%;
+        height: 2px;
+        background-color: #FFC107;
+        transition: width 0.3s ease-in-out;
+    }
+
+    
+    nav .navbar-menu a:hover::after {
+        width: 30%;
+    }
+    
+    nav .navbar-menu .contact-menu-secondary a {
+        position: relative;
+    }
+
+    nav .navbar-menu .contact-menu-secondary a::after {
+        content: "";
+        position: absolute;
+        left: 19%;
+        bottom: -7px;
+        width: 0%;
+        height: 2px;
+        background-color: #FFC107;
+        /*Warnakuning*/transition: width 0.3s ease-in-out;
+        -webkit-transition: width 0.3s ease-in-out;
+        -moz-transition: width 0.3s ease-in-out;
+        -ms-transition: width 0.3s ease-in-out;
+    
+    }
+
+    nav .navbar-menu .contact-menu-secondary a:hover::after {
+        width: 70%;
+    }
+
+    nav .navbar-menu .contact-menu-secondary {
+        display: block;
+        margin: 20px 0;
+    }
+
+
+    nav .hamburger {
+        padding: 25px;
+        display: block;
+        cursor: pointer;
+    }
+
+    nav .hamburger img {
+        height: 25px;
+    }
+
+    nav .navbar-menu.active {
+        right: 0;
+    }
+
+    nav .contact-menu-primary {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-description {
+        margin-top: 100px;
+        display: block;
+        padding: 0;
+        text-align: center;
+        padding-right: 105px;
+        min-width: 100%;
+    }
+
+    .hero .hero-description h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .hero .hero-description h2 {
+        margin: 0 auto;
+        min-width: 85%;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .hero .hero-description p {
+        margin: 30px auto;
+        font-size: 1.3rem;
+        min-width: 100%;
+    }
+
+    .hero .hero-description button {
+        font-size: 1.2rem;
+    }
+    
+    .hero .hero-image {
+        margin: -50px auto 50px auto;
+        padding: 0;
+    }
+
+    .hero .hero-image img {
+        width: 420px;
+        height: 740px;
+    }
+
+}
+
+/* Ukuran Handphone Kecil */
+@media screen and (max-width : 480px) {
+    nav {
+        background-color: black;
+    }
+    
+}
