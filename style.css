@@ -192,8 +192,7 @@ nav .hamburger {
 }
 
 .hero .hero-description #my-experienced {
-    width: 55%;
-    min-width: 500px;
+    width: 50%;
     line-height: 20px;
     margin-bottom: 40px;
 }
@@ -525,6 +524,11 @@ nav .hamburger {
 
     .hero .hero-description h2 {
         font-size: 1.4rem;
+    }
+
+    .hero .hero-description #my-experienced {
+        max-width: none;
+        min-width: none;
     }
 
     .hero .hero-image {
