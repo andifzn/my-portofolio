@@ -129,7 +129,7 @@ nav .hamburger {
 .hero {
     display: flex;
     justify-content: space-between;
-    overflow-y: hidden;
+    overflow-x: hidden;
     height: 100vh;
     background-image: url('assets/img/blob-scene-haikei.svg');
     background-repeat: no-repeat;
@@ -705,15 +705,14 @@ nav .hamburger {
     }
 
     .hero .hero-description #my-name {
-        border: 2px solid blue;
         padding: 0;
-        width: 30%;
+        width: 20%;
     }
 
 
     .hero .hero-description #about-me {
-        border: 2px solid red;
         word-wrap: break-word;
+        width: 20%;
     }
 
     .hero .hero-description h2 {
