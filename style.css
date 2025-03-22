@@ -704,6 +704,10 @@ nav .hamburger {
     /* hero section start */
     .hero {
         height: 100vh;
+        background: url('assets/img/blob-scene-haikei4.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     .hero .hero-description{
