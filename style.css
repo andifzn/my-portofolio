@@ -699,9 +699,11 @@ nav .hamburger {
     nav .hamburger img {
         height: 19px;
     }
+    /* navbar section end */
 
+    /* hero section start */
     .hero {
-        padding: 5rem 0;
+        height: 100vh;
     }
 
     .hero .hero-description{
@@ -712,7 +714,6 @@ nav .hamburger {
         min-width: 10%;
         padding: 0 0;
         margin: auto 0;
-        border: 2px solid red;
     }
 
     .hero .hero-description h1,h2,#about-me, #my-name, #my-experienced {
@@ -722,7 +723,7 @@ nav .hamburger {
     }
 
     .hero .hero-description h1 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         margin-bottom: 30px;
         max-width: none;
         width: fit-content;
@@ -735,7 +736,6 @@ nav .hamburger {
 
 
     .hero .hero-description #about-me {
-        border: 2px solid red;
         word-wrap: break-word;
         height: auto;
         width: none;
@@ -743,7 +743,7 @@ nav .hamburger {
 
     .hero .hero-description h2 {
         white-space: normal;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         line-height: 30px;
     }
 
@@ -754,11 +754,11 @@ nav .hamburger {
     }
 
     .hero .hero-description p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .hero .hero-description button {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     
     .hero .hero-image {
