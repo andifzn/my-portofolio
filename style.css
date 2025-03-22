@@ -161,7 +161,7 @@ nav .hamburger {
     margin-bottom: 40px;
 }
 
-.hero .hero-description #about-me {
+.hero .hero-description #my-name {
     width: 90%;
     line-height: 52px;
 }
@@ -355,7 +355,7 @@ nav .hamburger {
         font-size: 1.5rem;
     }
     
-    .hero .hero-description #about-me {
+    .hero .hero-description #my-name {
         display: block;
         line-height: 45px;
     }
@@ -519,7 +519,7 @@ nav .hamburger {
         font-size: 1rem;
     }
 
-    .hero .hero-description #about-me {
+    .hero .hero-description #my-name {
         line-height: 35px;
     }
 
@@ -684,24 +684,42 @@ nav .hamburger {
 
 /* Ukuran Handphone Kecil */
 @media screen and (max-width : 480px) {
-    body {
-        overflow-x: none;
+    .hero {
+        padding: 5rem 0;
     }
 
     .hero .hero-description{
         max-width: 100%;
+        margin: auto 0;
+    }
+
+    .hero .hero-description h1,h2,#my-experienced {
+        margin: auto;
     }
 
     .hero .hero-description h1 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 30px;
+        max-width: none;
+        width: fit-content;
+    }
+
+    .hero .hero-description #my-name {
+        border: 2px solid blue;
+        padding: 0;
+        width: 30%;
+    }
+
+
+    .hero .hero-description #about-me {
+        border: 2px solid red;
+        word-wrap: break-word;
     }
 
     .hero .hero-description h2 {
-        margin: 0 auto;
-        min-width: 30%;
         font-size: 1rem;
         line-height: 30px;
+
     }
 
     .hero .hero-description #my-experienced {
@@ -719,13 +737,6 @@ nav .hamburger {
     }
     
     .hero .hero-image {
-        margin: -50px auto 50px auto;
-        padding: 0;
+        display: none;
     }
-
-    .hero .hero-image img {
-        width: 320px;
-        height: 610px;
-    }
-    
 }
