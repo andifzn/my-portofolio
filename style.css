@@ -129,6 +129,7 @@ nav .hamburger {
 .hero {
     display: flex;
     justify-content: space-between;
+    overflow-y: hidden;
     height: 100vh;
     background-image: url('assets/img/blob-scene-haikei.svg');
     background-repeat: no-repeat;
@@ -148,7 +149,8 @@ nav .hamburger {
     justify-content: center;
     padding-left: 180px;
     box-sizing: border-box;
-    max-width: 43%;
+    width: 60%;
+    min-width: 400px;
 }
 
 .hero .hero-description h1 {
@@ -160,7 +162,7 @@ nav .hamburger {
 }
 
 .hero .hero-description #about-me {
-    max-width: 90%;
+    width: 90%;
     line-height: 52px;
 }
 
@@ -169,8 +171,7 @@ nav .hamburger {
     font-weight: 600;
     font-size: 2.7rem;
     color: black;
-    max-width: 91%;
-    
+    width: 51%;
 }
 
 .hero .hero-description span {
@@ -192,6 +193,7 @@ nav .hamburger {
 
 .hero .hero-description #my-experienced {
     width: 55%;
+    min-width: 500px;
     line-height: 20px;
     margin-bottom: 40px;
 }
@@ -345,7 +347,7 @@ nav .hamburger {
 
     /* Hero Section Start */
     .hero .hero-description {
-        max-width: 60%;
+        width: 70%;
         padding-left: 130px;;
     }
     
@@ -360,7 +362,8 @@ nav .hamburger {
     
     .hero .hero-description h2 {
         font-size: 1.7rem;
-        max-width: 50%;
+        width: 50%;
+        min-width: 300px;
     }
     
     .hero .hero-description span {
@@ -507,6 +510,11 @@ nav .hamburger {
         background-size: cover;
     }
 
+    .hero .hero-description {
+        width: 60%;
+        min-width: 450px;
+    }
+
     .hero .hero-description h1 {
         font-size: 1rem;
     }
@@ -626,31 +634,36 @@ nav .hamburger {
         height: auto;
     }
 
-    .hero-description {
+    .hero .hero-description {
         margin-top: 100px;
-        display: block;
         padding: 0;
         text-align: center;
-        padding-right: 105px;
-        min-width: 100%;
+        width: 100%;
+        max-width: none;
+        /* min-width: none; */
     }
 
     .hero .hero-description h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-bottom: 30px;
     }
 
     .hero .hero-description h2 {
         margin: 0 auto;
-        min-width: 85%;
-        font-size: 2rem;
+        width: 40%;
+        min-width: 350px;
+        font-size: 1.8rem;
         line-height: 40px;
     }
 
-    .hero .hero-description p {
+    .hero .hero-description #my-experienced {
         margin: 30px auto;
+        width: 70%;
+        min-width: 350px;
+    }
+
+    .hero .hero-description p {
         font-size: 1.3rem;
-        min-width: 100%;
     }
 
     .hero .hero-description button {
@@ -671,26 +684,34 @@ nav .hamburger {
 
 /* Ukuran Handphone Kecil */
 @media screen and (max-width : 480px) {
+    body {
+        overflow-x: none;
+    }
+
     .hero .hero-description{
-        width: 100%;
+        max-width: 100%;
     }
 
     .hero .hero-description h1 {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 30px;
     }
 
     .hero .hero-description h2 {
         margin: 0 auto;
-        min-width: 100%;
-        font-size: 1.2rem;
+        min-width: 30%;
+        font-size: 1rem;
         line-height: 30px;
     }
 
-    .hero .hero-description p {
+    .hero .hero-description #my-experienced {
         margin: 30px auto;
+        width: 50%;
+        min-width: 10%;
+    }
+
+    .hero .hero-description p {
         font-size: 0.8rem;
-        min-width: 100%;
     }
 
     .hero .hero-description button {
@@ -703,8 +724,8 @@ nav .hamburger {
     }
 
     .hero .hero-image img {
-        width: 380px;
-        height: 700px;
+        width: 320px;
+        height: 610px;
     }
     
 }
