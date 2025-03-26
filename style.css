@@ -701,6 +701,42 @@ nav .hamburger {
         padding: 8px;
         font-size: 0.8rem;
     }
+
+    /* Provide and services section start */
+
+    .provide h1 {
+        font-size: 1.2rem;
+    }
+
+    .provide h2 {
+        font-size: 1.7rem;
+    }
+
+    .first-content a {
+        font-size: 0.9rem;
+    }
+
+
+    .second-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .card-services {
+        width: 85%;
+        min-width: 70%;
+    }
+
+
+
+    /* Provide and services section end */
 }
 
 /* Ukuran Handphone Besar */
@@ -842,6 +878,33 @@ nav .hamburger {
         height: 740px;
     }
 
+    /* Provide and services section start */
+
+    .provide-main h1 {
+        font-size: 1.3rem;
+    }
+
+    .provide-main h2 {
+        font-size: 1.8rem;
+        margin-bottom: 45px;
+    }
+
+    .first-title {
+        line-height: 45px;
+    }
+
+    .first-content {
+        display: block;
+        margin-bottom: 80px;
+    }
+
+    .first-content a {
+        font-size: 0.8rem;
+        margin: 50px 0;
+    }
+
+    /* Provide and services section end */
+
 }
 
 /* Ukuran Handphone Kecil */
@@ -931,4 +994,32 @@ nav .hamburger {
     .hero .hero-image {
         display: none;
     }
+
+    /* Provide and services section start */
+
+
+    .provide-main h1 {
+        font-size: 0.9rem;
+    }
+
+    .provide-main h2 {
+        font-size: 1.1rem;
+        margin-bottom: 32px;
+    }
+
+    .first-title {
+        line-height: 40px;
+    }
+
+    .first-content {
+        display: block;
+        margin-bottom: 80px;
+    }
+
+    .first-content a {
+        font-size: 0.8rem;
+        margin: 50px 0;
+    }
+
+    /* Provide and services section end */
 }
