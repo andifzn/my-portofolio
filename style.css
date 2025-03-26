@@ -997,7 +997,6 @@ nav .hamburger {
 
     /* Provide and services section start */
 
-
     .provide-main h1 {
         font-size: 0.9rem;
     }
@@ -1014,6 +1013,7 @@ nav .hamburger {
     .first-content {
         display: block;
         margin-bottom: 80px;
+        padding: 0 1rem;
     }
 
     .first-content a {
