@@ -533,7 +533,12 @@ nav .hamburger {
 .about-cv a:hover {
     cursor: pointer;
     background-color: #FFC107;
-    transform: scale(105%);
+    transform: scale(110%);
+    -webkit-transform: scale(110%);
+    -moz-transform: scale(110%);
+    -ms-transform: scale(110%);
+    -o-transform: scale(110%);
+    text-shadow: var(--shadow);
 }
 
 .about-cv h4 {
@@ -924,10 +929,48 @@ nav .hamburger {
         width: 85%;
         min-width: 70%;
     }
-
-
-
     /* Provide and services section end */
+
+
+    /* About section start */
+
+    .about-photo img {
+        height: 280px;
+    }
+
+    .about-text h1 {
+        font-size: 0.9rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .about-text p {
+        font-size: 0.8rem;
+        width: 90%;
+        min-width: 80%;
+    }
+
+    .stats {
+        margin-bottom: 20px;
+    }
+
+    .stats p {
+        width: 100%;
+    }
+
+    .about-cv a {
+        font-size: 0.8rem;
+        padding: 10px 12px;
+    }
+
+    .about-cv h4 {
+        font-size: 0.9rem;
+    }
+
+
+    /* About section end */
 }
 
 /* Ukuran Handphone Besar */
@@ -1096,6 +1139,92 @@ nav .hamburger {
 
     /* Provide and services section end */
 
+
+    /* About section start */
+    .about {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .about-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
+        width: 70%;
+    }
+
+    .about-photo img {
+        height: 400px;
+    }
+
+    .about-text {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .about-text h1,h2 {
+        width: 90%;
+    }
+
+    .about-text h1 {
+        font-size: 1.5rem;
+        padding-left: 2.5rem;
+        
+    }
+
+    .about-text h1::before {
+        left: 4%;
+    }
+
+    .about-text h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-text p {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        width: 100%;
+        min-width: 70%;
+    }
+
+    .stats p {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .about-cv {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .about-cv a {
+        font-size: 1rem;
+        padding: 10px 12px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+
+    .about-cv h4 {
+        font-size: 1rem;
+        width: 40%;
+    }
+
+    /* About section end  */
+
 }
 
 /* Ukuran Handphone Kecil */
@@ -1213,4 +1342,77 @@ nav .hamburger {
     }
 
     /* Provide and services section end */
+
+    /* About section start */
+
+    .about {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .about-items {
+        gap: 7rem;
+        width: 70%;
+    }
+
+    .about-photo img {
+        height: 350px;
+    }
+
+
+    .about-text h1,h2 {
+        width: 90%;
+    }
+
+    .about-text h1 {
+        font-size: 1.3rem;
+        padding-left: 2.5rem;
+    }
+
+    .about-text h1::before {
+        left: 4%;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .stats {
+        padding-left: 1.2rem;
+        width: 100%;
+        min-width: 70%;
+    }
+
+    .stats p {
+        font-size: 1.3rem;
+    }
+
+    .about-cv {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        padding: 1.2rem;
+        width: 100%;
+    }
+
+    .about-cv a {
+        width: fit-content;
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+
+    .about-cv h4 {
+        font-size: 1rem;
+        width: 100%;
+        min-width: 30%;
+    }
+
+
+
+    /* About section end */
 }
