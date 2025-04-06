@@ -244,7 +244,6 @@ main {
     margin-top: 40px;
     font-family: 'Poppins';
     color: #4A4A4A;
-    padding-left: 0;
 }
 
 .hero .hero-description .portofolio-btn a {
@@ -749,11 +748,9 @@ main {
 .education-work-information {
     position: relative;
     line-height: 35px;
-}
-
-.education-work-information h2,p {
     padding-left: 1.5rem;
 }
+
 
 .education-work-information::before {
     content: "";
@@ -1356,15 +1353,14 @@ main {
     .hero {
         flex-direction: column;
         height: auto;
-
     }
 
     .hero .hero-description {
         margin-top: 100px;
-        padding: 0;
         text-align: center;
         width: 100%;
         max-width: none;
+        padding-left: 0;
         /* min-width: none; */
     }
 
@@ -1554,14 +1550,13 @@ main {
         align-items: center;
         width: 100%;
         min-width: 10%;
-        padding: 0 0;
-        margin: auto 0;
+        margin: auto;
     }
 
     .hero .hero-description h1,h2,#about-me, #my-name, #my-experienced {
         max-width: none;
         min-width: none;
-        margin: 0;
+        margin: auto;
     }
 
     .hero .hero-description h1 {
@@ -1590,7 +1585,7 @@ main {
     }
 
     .hero .hero-description #my-experienced {
-        margin: 30px 0;
+        margin: 30px auto;
         width: 80%;
         line-height: 15px;
         min-width: 10%;
