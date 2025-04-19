@@ -866,11 +866,18 @@ main {
     /* Hero Section Start */
     .hero .hero-description {
         width: 70%;
-        padding-left: 130px;;
+        padding-left: 130px;
+        animation: backInLeft;
+        -webkit-animation: backInLeft;
+        animation-duration: 1s;
     }
     
     .hero .hero-description h1 {
         font-size: 1.5rem;
+        animation: swing;
+        -webkit-animation: swing;
+        animation-delay: 1.15s;
+        animation-duration: 1s;
     }
     
     .hero .hero-description #my-name {
@@ -898,11 +905,15 @@ main {
     
     .hero .hero-image {
         padding-right: 130px;
+        
     }
     
     .hero .hero-image img {
         width: 360px;
         height: 630px;
+        animation: flipInY;
+        -webkit-animation: backInRight;
+        animation-duration: 1s;
     }
     /* Hero Section End */
 
@@ -1601,7 +1612,7 @@ main {
         width: 100%;
         min-width: 10%;
         margin: auto;
-    }
+}
 
     .hero .hero-description h1,h2,#about-me, #my-name, #my-experienced {
         max-width: none;
@@ -1614,7 +1625,10 @@ main {
         margin-bottom: 30px;
         max-width: none;
         width: fit-content;
-    }
+        animation: bounceInDown;
+        -webkit-animation: bounceInDown;
+        animation-duration: 3.8s;
+}
 
     .hero .hero-description #my-name {
         padding: 0;
@@ -1632,10 +1646,13 @@ main {
         white-space: normal;
         font-size: 1.2rem;
         line-height: 30px;
-    }
+        animation: jackInTheBox;
+        -webkit-animation: jackInTheBox;
+        animation-duration: 2s;
+}
 
     .hero .hero-description #my-experienced {
-        margin: 30px auto;
+        margin: 30px auto 40px auto;
         width: 80%;
         line-height: 15px;
         min-width: 10%;
@@ -1643,10 +1660,21 @@ main {
 
     .hero .hero-description p {
         font-size: 0.7rem;
+        animation: bounceInUp;
+        -webkit-animation: bounceInUp;
+        animation-duration: 3.8s;
     }
 
-    .hero .hero-description button {
-        font-size: 1rem;
+    .hero .hero-description .portofolio-btn a {
+        font-size: 0.9rem;
+        padding: 9px;
+        border-radius: 30px;
+    }
+
+    .hero .hero-description .portofolio-btn{
+        animation: bounceInUp;
+        -webkit-animation: bounceInUp;
+        animation-duration: 3.8s;
     }
     
     .hero .hero-image {
@@ -1662,6 +1690,7 @@ main {
     .provide-main h2 {
         font-size: 1.1rem;
         margin-bottom: 32px;
+        margin-left: 0;
     }
 
     .first-title {
